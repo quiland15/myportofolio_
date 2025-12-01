@@ -134,6 +134,44 @@
 		$(".fh5co-loader").fadeOut("slow");
 	};
 
+	var contactForm = function() {
+		var $form = $('#contact-form');
+		if (!$form.length) {
+			return;
+		}
+
+		$form.on('submit', function(e) {
+			e.preventDefault();
+
+			var firstName = ($('#fname').val() || '').trim();
+			var lastName = ($('#lname').val() || '').trim();
+			var email = ($('#email').val() || '').trim();
+			var subject = ($('#subject').val() || 'New message from Portfolio').trim();
+			var message = ($('#message').val() || '').trim();
+			var recipient = $form.data('recipient') || 'quiland86@gmail.com';
+
+			if (!email || !message) {
+				alert('Please fill in your email and message before sending.');
+				return;
+			}
+
+			var fullName = [firstName, lastName].filter(Boolean).join(' ').trim() || 'Anonymous';
+			var bodyLines = [
+				'Name: ' + fullName,
+				'Email: ' + email,
+				'',
+				'Message:',
+				message
+			];
+
+			var mailto = 'mailto:' + encodeURIComponent(recipient) +
+				'?subject=' + encodeURIComponent(subject) +
+				'&body=' + encodeURIComponent(bodyLines.join('\n'));
+
+			window.location.href = mailto;
+		});
+	};
+
 	
 	$(function(){
 		contentWayPoint();
@@ -143,6 +181,7 @@
 		parallax();
 		// pieChart();
 		skillsWayPoint();
+		contactForm();
 	});
 
 
