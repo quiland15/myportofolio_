@@ -39,11 +39,21 @@
 	<![endif]-->
 
 	</head>
-	<body>
+	<body class="lang-id">
 		
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">	
+	<div class="lang-switcher">
+		<div class="lang-switcher-inner">
+			<span data-i18n="switcher.label">Bahasa</span>
+			<div class="btn-group">
+				<button class="lang-btn active" data-lang="id">ID</button>
+				<button class="lang-btn" data-lang="en">EN</button>
+			</div>
+			<a href="CV_quilandWenas.pdf" class="download-cv" download data-i18n="switcher.download">Unduh CV</a>
+		</div>
+	</div>
 	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/photo-1461749280684-dccba630e2f6.avif);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
@@ -53,11 +63,11 @@
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
 							<div class="profile-thumb" style="background: url(images/299332889_3209029129411135_7537361851767170704_n.jpg);"></div>
 							<h1><span>Quiland Wenas</span></h1>
-							<h3><span>BackEnd Developer & FrontEnd Developer</span></h3>
-							<p style="color:#fff;margin-top:10px;">Menggabungkan pengalaman freelance dengan praktik engineering modern—CI/CD, type-safe codebase, dokumentasi, dan komunikasi asynchronous—untuk siap bergabung dengan tim global dari hari pertama.</p>
+							<h3 data-i18n="hero.role"><span>BackEnd Developer & FrontEnd Developer</span></h3>
+							<p style="color:#fff;margin-top:10px;" data-i18n="hero.description">Menggabungkan pengalaman freelance dengan praktik engineering modern—CI/CD, type-safe codebase, dokumentasi, dan komunikasi asynchronous—untuk siap bergabung dengan tim global dari hari pertama.</p>
 							<p>
-								<a href="#fh5co-work" class="btn btn-primary">Lihat Project</a>
-								<a href="#fh5co-consult" class="btn btn-default">Hubungi Saya</a>
+								<a href="#fh5co-work" class="btn btn-primary" data-i18n="hero.ctaProjects">Lihat Project</a>
+								<a href="#fh5co-consult" class="btn btn-default" data-i18n="hero.ctaContact">Hubungi Saya</a>
 							</p>
 							<p>
 								<ul class="fh5co-social-icons">
@@ -78,7 +88,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>About Me</h2>
+					<h2 data-i18n="about.heading">About Me</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -91,15 +101,16 @@
 					</ul>
 				</div>
 				<div class="col-md-8">
-					<h2>Hello There!</h2>
-					<p>Saya fokus pada frontend dan mobile development (React, TypeScript, React Native, TailwindCSS) dengan praktik yang sama seperti lingkungan startup global: code review, linting otomatis, dokumentasi singkat, dan komunikasi async yang jelas.</p>
-					<p>Freelance project seperti website perusahaan dan sistem kasir UD Pelita membuat saya terbiasa memimpin diskusi kebutuhan bisnis, merancang arsitektur data sederhana, hingga merilis fitur secara iteratif.</p>
+					<h2 data-i18n="about.title">Hello There!</h2>
+					<p data-i18n="about.p1">Saya fokus pada frontend dan mobile development (React, TypeScript, React Native, TailwindCSS) dengan praktik yang sama seperti lingkungan startup global: code review, linting otomatis, dokumentasi singkat, dan komunikasi async yang jelas.</p>
+					<p data-i18n="about.p2">Freelance project seperti website perusahaan dan sistem kasir UD Pelita membuat saya terbiasa memimpin diskusi kebutuhan bisnis, merancang arsitektur data sederhana, hingga merilis fitur secara iteratif.</p>
 					<ul>
-						<li><strong>Siap remote:</strong> bekerja full-time dengan overlap 4–6 jam untuk zona waktu Asia/Australia/Eropa.</li>
-						<li><strong>Bahasa kerja:</strong> komunikasi Inggris/Indonesia, dokumentasi teknis dalam bahasa Inggris.</li>
-						<li><strong>Tooling:</strong> GitHub, Linear/Jira, Notion, Slack/Teams, dan CI/CD sederhana via GitHub Actions.</li>
+						<li data-i18n="about.listRemote"><strong>Siap remote:</strong> bekerja full-time dengan overlap 4–6 jam untuk zona waktu Asia/Australia/Eropa.</li>
+						<li data-i18n="about.listLanguage"><strong>Bahasa kerja:</strong> komunikasi Inggris/Indonesia, dokumentasi teknis dalam bahasa Inggris.</li>
+						<li data-i18n="about.listTooling"><strong>Tooling:</strong> GitHub, Linear/Jira, Notion, Slack/Teams, dan CI/CD sederhana via GitHub Actions.</li>
 					</ul>
-					<p>Target saya adalah memberikan hasil yang measurable (peningkatan efisiensi, pengalaman pengguna, atau waktu rilis) pada setiap kolaborasi, meskipun dimulai dari studi kasus pribadi.</p>
+					<p data-i18n="about.p3">Target saya adalah memberikan hasil yang measurable (peningkatan efisiensi, pengalaman pengguna, atau waktu rilis) pada setiap kolaborasi, meskipun dimulai dari studi kasus pribadi.</p>
+					<p><a href="CV_quilandWenas.pdf" class="btn btn-default btn-sm" download data-i18n="about.download">Unduh CV Lengkap</a></p>
 					<p>
 						<ul class="fh5co-social-icons">
 							<li><a href="https://www.instagram.com/quiland15/" target="_blank"><i class="icon-instagram2"></i></a></li>
@@ -117,25 +128,25 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Experience At A Glance</h2>
-					<p>I take on freelance and personal initiatives that mirror real business needs—data collection systems, branded websites, and mobile apps—to prove I can start shipping value from week one.</p>
+					<h2 data-i18n="resume.heading">Ringkasan Pengalaman</h2>
+					<p data-i18n="resume.subheading">Saya mengerjakan inisiatif freelance dan proyek pribadi yang meniru kebutuhan bisnis nyata—sistem pengumpulan data, website brand, dan aplikasi mobile—untuk membuktikan bisa memberikan value sejak minggu pertama.</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12 col-md-offset-0">
 					<ul class="timeline">
 						<li class="timeline-heading text-center animate-box">
-							<div><h3>Work Experience</h3></div>
+							<div><h3 data-i18n="resume.workHeading">Pengalaman Kerja</h3></div>
 						</li>
 						<li class="animate-box timeline-unverted">
 							<div class="timeline-badge"><i class="icon-video"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Video Editor (Freelance)</h3>
-									<span class="company">Promotional Videos for Car Workshop - Juni 2024</span>
+									<h3 class="timeline-title" data-i18n="resume.video.title">Video Editor (Freelance)</h3>
+									<span class="company" data-i18n="resume.video.company">Video Promosi Bengkel Mobil - Juni 2024</span>
 								</div>
 								<div class="timeline-body">
-									<p>Created and edited promotional videos to increase visibility and attract customers to a car repair workshop, And Applied creative techniques to effectively showcase the workshop services.</p>
+									<p data-i18n="resume.video.body">Menyusun naskah, mengambil, dan mengedit video promosi untuk meningkatkan visibilitas bengkel mobil serta menarik pelanggan baru, sekaligus memastikan layanan bengkel tersampaikan dengan visual yang kuat.</p>
 								</div>
 							</div>
 						</li>
@@ -143,13 +154,11 @@
 							<div class="timeline-badge"><i class="icon-chart"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Data Analyst (Freelance)</h3>
-									<span class="company">Election and Governance Projects - February 2024</span>
+									<h3 class="timeline-title" data-i18n="resume.data.title">Data Analyst (Freelance)</h3>
+									<span class="company" data-i18n="resume.data.company">Proyek Pemilu & Pemerintahan - Februari 2024</span>
 								</div>
 								<div class="timeline-body">
-									<p>Collected and organized voter data for legislative and mayoral elections using Microsoft Excel.
-										Developed simple Excel formulas to streamline data processing and analysis for election purposes.
-										Prepared reports and insights to support decision-making during the election process.</p>
+									<p data-i18n="resume.data.body">Mengumpulkan dan merapikan data pemilih DPRD/Wali Kota menggunakan Microsoft Excel, membangun rumus untuk mempercepat analisis, lalu menyiapkan laporan guna mendukung pengambilan keputusan tim lapangan.</p>
 								</div>
 							</div>
 						</li>
@@ -157,11 +166,11 @@
 							<div class="timeline-badge"><i class="icon-genius"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Excel Specialist (Freelance)</h3>
-									<span class="company">Election and Governance Projects - November 2024</span>
+									<h3 class="timeline-title" data-i18n="resume.excel.title">Excel Specialist (Freelance)</h3>
+									<span class="company" data-i18n="resume.excel.company">Proyek Pemilu & Pemerintahan - November 2024</span>
 								</div>
 								<div class="timeline-body">
-									<p>Designed Excel formulas to simplify data management for local elections, And Conducted efficient data analysis to improve the accuracy of election reporting.</p>
+									<p data-i18n="resume.excel.body">Merancang template dan formula Excel untuk mempermudah manajemen data pilkada serta memastikan laporan yang dikirim tim sesuai standar akurasi yang diminta pihak penyelenggara.</p>
 								</div>
 							</div>
 						</li>
@@ -169,14 +178,14 @@
 							<div class="timeline-badge"><i class="icon-genius"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Mobile Developer (React Native)</h3>
-									<span class="company">Personal Projects - (2024 – Present)</span>
+									<h3 class="timeline-title" data-i18n="resume.mobile.title">Mobile Developer (React Native)</h3>
+									<span class="company" data-i18n="resume.mobile.company">Personal Project - 2024 – Sekarang</span>
 								</div>
 								<div class="timeline-body">
-									<p>
-										Spearheaded the redesign of UD Pelita’s catalog & cashier web app using React and Tailwind to keep data consistent across stores. <br>
-										Delivered responsive UI, reusable components, and Firebase Realtime Database integration so the owner could monitor inventory from any device. <br>
-										Documented a lightweight design system so future iterations remain consistent even without a full-time designer. <br>
+									<p data-i18n="resume.mobile.body">
+										Membangun aplikasi internal untuk katalog & kasir UD Pelita memakai React Native, dengan navigasi bertahap, autentikasi ringan, serta integrasi Firebase Realtime Database agar stok bisa dipantau real time. <br>
+										Menulis komponen ulang ke TypeScript demi memastikan codebase aman ketika kolaborasi remote. <br>
+										Menyusun catatan desain singkat supaya handover ke engineer lain lebih cepat. <br>
 									</p>
 								</div>
 							</div>
@@ -185,14 +194,14 @@
 							<div class="timeline-badge"><i class="icon-genius"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Frontend Developer</h3>
-									<span class="company">UD Pelita (Freelance Project) - 2023</span>
+									<h3 class="timeline-title" data-i18n="resume.frontend.title">Frontend Developer</h3>
+									<span class="company" data-i18n="resume.frontend.company">UD Pelita (Proyek Freelance) - 2023</span>
 								</div>
 								<div class="timeline-body">
-									<p>
-										Developed simple mobile apps with React Native. <br>
-										Implemented navigation, basic authentication flow, and database connections. <br>
-										Optimized UI for cross-platform performance. <br>
+									<p data-i18n="resume.frontend.body">
+										Mengembangkan website profil perusahaan beserta dashboard kasir menggunakan React + Tailwind. <br>
+										Merancang komponen reusable, integrasi API sederhana, dan layout mobile-first agar informasinya mudah diakses tim operasional. <br>
+										Menghubungkan dashboard ke Firebase untuk sinkronisasi data transaksi dan inventori. <br>
 									</p>
 								</div>
 							</div>
@@ -200,17 +209,17 @@
 
 						<br>
 						<li class="timeline-heading text-center animate-box">
-							<div><h3>Education</h3></div>
+							<div><h3 data-i18n="resume.educationHeading">Pendidikan</h3></div>
 						</li>
 						<li class="timeline-inverted animate-box">
 							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bachelor's Degree</h3>
-									<span class="company">Klabat University - 2021 - Present</span>
+									<h3 class="timeline-title" data-i18n="resume.education.title">Sarjana Ilmu Komputer</h3>
+									<span class="company" data-i18n="resume.education.company">Universitas Klabat - 2021 - Sekarang</span>
 								</div>
 								<div class="timeline-body">
-									<p>Currently pursuing a Bachelor's degree in Computer Science. Learning about programming, software development, and cloud servers.</p>
+									<p data-i18n="resume.education.body">Sedang menyelesaikan studi S1 Ilmu Komputer dengan fokus pada pemrograman, pengembangan perangkat lunak, dan dasar infrastruktur cloud.</p>
 								</div>
 							</div>
 						</li>
@@ -226,7 +235,7 @@
 			<div class="services-padding">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>My Services</h2>
+						<h2 data-i18n="services.heading">Layanan</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -236,8 +245,8 @@
 								<i class="icon-monitor"></i>
 							</span>
 							<div class="feature-copy">
-								<h3>Backend Developer</h3>
-								<p>Building robust and efficient server-side systems, focusing on APIs, databases, and security. I ensure the backend is scalable, reliable, and optimized for performance.</p>
+								<h3 data-i18n="services.backend.title">Backend Developer</h3>
+								<p data-i18n="services.backend.body">Membangun API dan layer database yang aman serta scalable, dengan fokus pada dokumentasi endpoint yang rapi dan workflow deploy yang mudah dirawat tim kecil.</p>
 							</div>
 						</div>
 					</div>
@@ -248,8 +257,8 @@
 								<i class="icon-cloud"></i>
 							</span>
 							<div class="feature-copy">
-								<h3>Cloud Server</h3>
-								<p>Managing and deploying scalable cloud infrastructure for high-performance applications. I specialize in cloud services such as AWS, and Google Cloud. ensuring seamless server operations.</p>
+								<h3 data-i18n="services.cloud.title">Cloud Server</h3>
+								<p data-i18n="services.cloud.body">Mengatur dan men-deploy infrastruktur cloud (AWS/GCP) sederhana untuk kebutuhan staging/production, termasuk pengaturan environment variable, storage, dan pemantauan dasar.</p>
 							</div>
 						</div>
 
@@ -260,8 +269,8 @@
 								<i class="icon-search"></i>
 							</span>
 							<div class="feature-copy">
-								<h3>FrontEnd</h3>
-								<p>Building responsive and scalable user interfaces with React, TypeScript, and TailwindCSS. Skilled in component-based development, API integration, and ensuring consistent UI/UX across devices.</p>
+								<h3 data-i18n="services.frontend.title">FrontEnd</h3>
+								<p data-i18n="services.frontend.body">Mendesain dan membangun antarmuka responsif berbasis React + TypeScript, lengkap dengan integrasi API, state management ringan, dan konsistensi UI di berbagai ukuran layar.</p>
 							</div>
 						</div>
 					</div>
@@ -274,7 +283,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Skills</h2>
+					<h2 data-i18n="skills.heading">Skills</h2>
 				</div>
 			</div>
 			<!-- <div class="row row-pb-md">
@@ -373,8 +382,8 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Projects & Case Studies</h2>
-					<p>Semua proyek di bawah ini bersumber langsung dari repositori GitHub saya. Walaupun belum dipublikasikan secara komersial, masing-masing dirancang untuk mereplikasi tantangan yang biasa ditemui tim engineering global.</p>
+					<h2 data-i18n="projects.heading">Proyek & Studi Kasus</h2>
+					<p data-i18n="projects.intro">Semua proyek di bawah ini bersumber langsung dari repositori GitHub saya. Walaupun belum dirilis publik, tiap studi kasus meniru tantangan yang sering ditemui tim engineering global.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -388,20 +397,20 @@
 				</div>
 				<div class="col-md-8 animate-box">
 					<div class="work-summary" style="background:#fff;padding:30px;border-radius:6px;color:#555;">
-						<h3>Kenapa penting untuk perusahaan luar?</h3>
+						<h3 data-i18n="projects.whyTitle">Kenapa relevan untuk perusahaan luar?</h3>
 						<ul>
-							<li>Menerapkan navigasi terstruktur, authentication pattern, dan integrasi database yang sama seperti aplikasi produksi.</li>
-							<li>Menulis ulang komponen ke TypeScript untuk menjaga type-safety ketika kolaborasi lintas zona waktu.</li>
-							<li>Menyiapkan automasi linting (ESLint, Prettier) serta unit test dasar sebagai bukti kesiapan mengikuti standar CI/CD.</li>
+							<li data-i18n="projects.point1">Menerapkan navigasi terstruktur, pola autentikasi, dan integrasi database layaknya aplikasi produksi.</li>
+							<li data-i18n="projects.point2">Seluruh komponen ditulis ulang ke TypeScript untuk menjaga type-safety saat kolaborasi lintas zona waktu.</li>
+							<li data-i18n="projects.point3">Menyiapkan otomatisasi linting (ESLint, Prettier) dan unit test dasar agar mudah disambungkan ke pipeline CI/CD.</li>
 						</ul>
-						<p><a href="https://github.com/quiland15/Aplikasi-Mobile" target="_blank" class="btn btn-primary btn-sm">Lihat repository</a></p>
+						<p><a href="https://github.com/quiland15/Aplikasi-Mobile" target="_blank" class="btn btn-primary btn-sm" data-i18n="projects.viewRepo">Lihat repository</a></p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12 animate-box">
 					<div class="fh5co-heading text-center" style="margin-top:40px;">
-						<p>Saya terus menambah studi kasus baru (misalnya dashboard React + Tailwind, backend API dengan Node/Express). Hubungi saya untuk daftar lengkap atau sesi live demo.</p>
+						<p data-i18n="projects.more">Saya terus menambahkan studi kasus baru (dashboard React + Tailwind, backend API Node/Express). Hubungi saya untuk daftar lengkap atau sesi demo.</p>
 					</div>
 				</div>
 			</div>
@@ -471,9 +480,9 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Hire Me!</h2>
-					<p>Together, let's turn your project into something that not only meets expectations but also creates a remarkable impact.</p>
-					<p><a href="#fh5co-consult" class="btn btn-default btn-lg">Contact Me</a></p>
+					<h2 data-i18n="cta.heading">Hire Me!</h2>
+					<p data-i18n="cta.body">Mari kita ubah kebutuhan Anda menjadi solusi yang memenuhi ekspektasi sekaligus memberi dampak nyata bagi bisnis.</p>
+					<p><a href="#fh5co-consult" class="btn btn-default btn-lg" data-i18n="cta.button">Hubungi Saya</a></p>
 				</div>
 			</div>
 		</div>
@@ -484,39 +493,39 @@
 			<div class="overlay"></div>
 		</div>
 		<div class="choose animate-box">
-			<h2>Contact</h2>
+			<h2 data-i18n="contact.heading">Kontak</h2>
 			<form id="contact-form" action="#" data-recipient="quiland86@gmail.com" novalidate>
 				<div class="row form-group">
 					<div class="col-md-6">
-						<input type="text" id="fname" name="firstName" class="form-control" placeholder="Your first name">
+						<input type="text" id="fname" name="firstName" class="form-control" placeholder="Nama depan Anda" data-i18n-placeholder="contact.firstName">
 					</div>
 				</div>
 				<div class="row form-group">
 					<div class="col-md-6">
-						<input type="text" id="lname" name="lastName" class="form-control" placeholder="Your last name">
+						<input type="text" id="lname" name="lastName" class="form-control" placeholder="Nama belakang Anda" data-i18n-placeholder="contact.lastName">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="email" id="email" name="email" class="form-control" placeholder="Your email address" required>
+						<input type="email" id="email" name="email" class="form-control" placeholder="Alamat email Anda" required data-i18n-placeholder="contact.email">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
+						<input type="text" id="subject" name="subject" class="form-control" placeholder="Subjek pesan" data-i18n-placeholder="contact.subject">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Type your message" required></textarea>
+						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Tulis pesan Anda" required data-i18n-placeholder="contact.message"></textarea>
 					</div>
 				</div>
 				<div class="form-group">
-					<input type="submit" value="Send Message" class="btn btn-primary">
-					<p class="text-muted" style="margin-top:10px;">Klik tombol akan membuka aplikasi email bawaan Anda.</p>
+					<input type="submit" value="Kirim Pesan" class="btn btn-primary" data-i18n-value="contact.submit">
+					<p class="text-muted" style="margin-top:10px;" data-i18n="contact.note">Klik tombol akan membuka aplikasi email bawaan Anda.</p>
 				</div>
 
 			</form>	
